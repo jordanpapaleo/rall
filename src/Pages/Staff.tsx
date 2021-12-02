@@ -1,7 +1,8 @@
 import React from  'react'
+
+import { colorHash, colors, fonts, spacing } from '../styles'
 import { ROLES, STAFF } from '../data/boardMembers'
-import Contact from '../Contact'
-import { colorHash, colors, fonts } from '../styles'
+import Contact from '../components/Contact'
 import orderBy from 'lodash/orderBy'
 
 const Staff = () =>  {
@@ -28,7 +29,7 @@ const Staff = () =>  {
           display: grid;
           font-size: ${fonts.textLg};
           grid-template-columns: 150px 150px 1fr;
-          padding: 1rem 0;
+          padding: ${spacing.w4} 0;
         }
 
         .staff .boardmembers {
@@ -40,7 +41,7 @@ const Staff = () =>  {
       <h2>2022 Executive Board Members</h2>
       <ul style={{listStyleType: 'none', margin: 0, padding: 0, }}>
         {eboard.map(({firstName, lastName, role, email}) => (
-          <li style={{marginBottom: '0.5rem'}}>
+          <li style={{marginBottom: spacing.w2}}>
             <h3 className="eboard">
               <strong>{firstName} {lastName}</strong>
               {ROLES[role]}
@@ -53,16 +54,16 @@ const Staff = () =>  {
         ))}
       </ul>
 
-      <hr style={{margin: '1rem 0'}}/>
+      <hr style={{margin: `${spacing.w4} 0`}}/>
 
       <h2>2022 Board Members</h2>
       <div className="boardmembers">
         {regboard}
       </div>
 
-      <hr style={{ margin: '1rem 0' }} />
+      <hr style={{ margin: `${spacing.w4} 0` }} />
 
-      <Contact style={{marginTop: '1rem'}} />
+      <Contact style={{ marginTop: spacing.w4}} />
     </div>
   )
 }

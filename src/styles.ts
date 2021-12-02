@@ -104,3 +104,14 @@ export const fonts = {
   textXl: '1.25rem',
   text2xl: '1.5rem',
 }
+
+export const spacing = {
+  w1: '0.25rem',
+  w2: '0.5rem',
+  w3: '0.75rem',
+  w4: '1rem',
+  w5: '1.25rem',
+  w6: '1.5rem',
+  w7: '1.75rem',
+  w8: '2rem',
+}

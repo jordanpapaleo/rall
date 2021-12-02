@@ -1,9 +1,10 @@
 import React from 'react'
+import {spacing } from '../styles'
 
 const styleDD = {
   display: 'grid',
   gridTemplateColumns: '150px 1fr',
-  fontSize: '1rem'
+  fontSize: spacing.w4
 }
 
 export const address = {
@@ -21,27 +22,36 @@ export const contactInfo = {
   backgroundChecks: 'background@renoamerican.com'
 }
 
+export const AddressBlock = ({style = {}}) => {
+  return (
+    <address style={style}>
+      {address.street}<br />
+      {address.city}, {address.state} {address.zipcode}
+    </address>
+  )
+}
+
 const Contact = ({style = {}}) => (
   <dl style={style}>
     <div style={styleDD}>
-      <dd style={{fontWeight: 'bold'}}>Voicemail:</dd>
+      <dd style={{fontWeight: 'bold'}}>Phone:</dd>
       <dt><a href={`tel:${contactInfo.phone}`}>{contactInfo.phone}</a></dt>
     </div>
     <div style={styleDD}>
       <dd style={{ fontWeight: 'bold' }}>General Contact:</dd>
-      <dt><a href={`mailto${contactInfo.generalEmail}`}>{contactInfo.generalEmail}</a></dt>
+      <dt><a href={`mailto:${contactInfo.generalEmail}`}>{contactInfo.generalEmail}</a></dt>
     </div>
     <div style={styleDD}>
       <dd style={{fontWeight: 'bold'}}>Safety:</dd>
-      <dt><a href={`mailto${contactInfo.safety}`}>{contactInfo.safety}</a></dt>
+      <dt><a href={`mailto:${contactInfo.safety}`}>{contactInfo.safety}</a></dt>
     </div>
     <div style={styleDD}>
       <dd style={{fontWeight: 'bold'}}>Registration:</dd>
-      <dt><a href={`mailto${contactInfo.registration}`}>{contactInfo.registration}</a></dt>
+      <dt><a href={`mailto:${contactInfo.registration}`}>{contactInfo.registration}</a></dt>
     </div>
     <div style={styleDD}>
       <dd style={{fontWeight: 'bold'}}>Background Checks:</dd>
-      <dt><a href={`mailto${contactInfo.backgroundChecks}`}>{contactInfo.backgroundChecks}</a></dt>
+      <dt><a href={`mailto:${contactInfo.backgroundChecks}`}>{contactInfo.backgroundChecks}</a></dt>
     </div>
   </dl>
 )

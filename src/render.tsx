@@ -2,9 +2,13 @@ import * as fs from "fs";
 import prettier from "prettier";
 import React from "react";
 import ReactDOMServer from "react-dom/server"
-import Staff from './Staff'
+import Staff from './pages/Staff'
+import ContactInformation from './pages/ContactInformation'
+import LiftLittleLeagueFundraiser from './pages/LiftLittleLeagueFundraiser'
 
 const pages = [
+  ContactInformation,
+  LiftLittleLeagueFundraiser,
   Staff
 ]
 
@@ -16,3 +20,5 @@ pages.forEach((page) => {
   fs.writeFileSync(outputFile, prettyHtml);
   console.log(`Wrote ${outputFile}`);
 })
+
+
