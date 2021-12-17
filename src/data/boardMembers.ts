@@ -11,7 +11,8 @@ export const ROLES = {
   10: 'Security',
   11: 'Field and Maintenance',
   12: 'Snack Bar Manager',
-  13: 'Equipment Manager'
+  13: 'Equipment Manager',
+  14: 'Umpire in Chief',
 }
 
 export const STAFF = [
@@ -21,13 +22,14 @@ export const STAFF = [
   { firstName: 'Brian', lastName: 'Ligon', email: 'brian@renoamerican.com', role: 3, active: true },
   { firstName: 'Brian', lastName: 'Park-Li',email: 'brianpark-li@renoamerican.com', role: 4, active: true },
   { firstName: 'John', lastName: 'Cole', email: 'johncole@renoamerican.com', role: 5, active: true },
-  { firstName: 'Kyle', lastName: 'Daters', email: '', role: 5, active: true },
-  { firstName: 'Scott', lastName: 'Walquist', email: 'scott@renoamerican.com', role: 10, active: true },
+  { firstName: 'Kyle', lastName: 'Daters', email: 'kyle@renoamerican.com', role: 5, active: true },
+  // { firstName: 'Scott', lastName: 'Walquist', email: 'scott@renoamerican.com', role: 10, active: true },
   { firstName: 'Scott', lastName: 'Walquist', email: 'scott@renoamerican.com', role: 6, active: true },
   { firstName: 'Matt', lastName: 'Brown', email: 'info@renoamerican.com', role: 9, active: true },
   { firstName: 'Mike', lastName: 'Warmbrodt', email: 'mike@renoamerican.com', role: 11, active: true },
-  { firstName: 'Andrew', lastName: 'Casacca', email: '', role: 12, active: true },
+  { firstName: 'Andrew', lastName: 'Casacca', email: 'greg@renoamerican.com', role: 12, active: true },
   { firstName: 'Stacy', lastName: 'Park-Li', email:'staceyp@renoamerican.com', role: 13, active: true },
+  { firstName: 'Greg', lastName: 'Potts', email:'greg@renoamerican.com', role: 14, active: true },
 
   { firstName: 'Cara', lastName: 'Rivas', email: '', role: 0, active: true },
   { firstName: 'Carl', lastName: 'Lagrone', email: '', role: 0, active: true },
