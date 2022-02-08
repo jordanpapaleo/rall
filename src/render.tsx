@@ -2,14 +2,16 @@ import * as fs from "fs";
 import prettier from "prettier";
 import React from "react";
 import ReactDOMServer from "react-dom/server"
-import Staff from './pages/Staff'
+import BackgroundChecks from './pages/BackgroundChecks'
 import ContactInformation from './pages/ContactInformation'
 import LiftLittleLeagueFundraiser from './pages/LiftLittleLeagueFundraiser'
+import Staff from './pages/Staff'
 
 const pages = [
+  BackgroundChecks,
   ContactInformation,
   LiftLittleLeagueFundraiser,
-  Staff
+  Staff,
 ]
 
 pages.forEach((page) => {
