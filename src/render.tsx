@@ -6,12 +6,18 @@ import BackgroundChecks from './pages/BackgroundChecks'
 import ContactInformation from './pages/ContactInformation'
 import LiftLittleLeagueFundraiser from './pages/LiftLittleLeagueFundraiser'
 import Staff from './pages/Staff'
+import AllStars from './pages/AllStars'
+import Hooligans from './pages/Hooligans'
+import Results from './pages/Results'
 
 const pages = [
   BackgroundChecks,
   ContactInformation,
   LiftLittleLeagueFundraiser,
   Staff,
+  AllStars,
+  Hooligans,
+  Results,
 ]
 
 pages.forEach((page) => {

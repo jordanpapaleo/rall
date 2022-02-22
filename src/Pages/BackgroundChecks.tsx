@@ -11,11 +11,7 @@ const BackgroundChecks = () => {
   const dateString = `${month}/${day}/${year}`
 
   return (
-    <div>
-      <div>
-        <a href="https://forms.gle/3sZFMh6tB6JFAfcQ8" title="open google doc">Submit a background check form</a>
-      </div>
-
+    <div style={{ marginLeft: '10%', marginRight: '10%' }}>
       <h1>Spring 2022 Background Checked Manager/Coach</h1>
       <h2>UPDATED: {dateString}</h2>
 

@@ -1,13 +1,13 @@
-import React from  'react'
+import React from 'react'
 
 import { colorHash, colors, fonts, spacing } from '../styles'
 import { ROLES, STAFF } from '../data/boardMembers'
 import Contact from '../components/Contact'
 import orderBy from 'lodash/orderBy'
 
-const Staff = () =>  {
+const Staff = () => {
   const eboard = orderBy(STAFF, ['role', 'lastName'], ['asc'])
-    .filter(({active}) => active)
+    .filter(({ active }) => active)
     .filter(({ role }) => role)
 
 
@@ -18,7 +18,7 @@ const Staff = () =>  {
     .join(', ')
 
   return (
-    <div className="staff">
+    <div className="staff" style={{ marginLeft: '10%', marginRight: '10%' }}>
       <style>{`
         .staff li:hover {
           background-color: ${colorHash.grey200};
@@ -39,9 +39,9 @@ const Staff = () =>  {
         }
       `}</style>
       <h2>2022 Executive Board Members</h2>
-      <ul style={{listStyleType: 'none', margin: 0, padding: 0, }}>
-        {eboard.map(({firstName, lastName, role, email}) => (
-          <li style={{marginBottom: spacing.w2}}>
+      <ul style={{ listStyleType: 'none', margin: 0, padding: 0, }}>
+        {eboard.map(({ firstName, lastName, role, email }) => (
+          <li style={{ marginBottom: spacing.w2 }}>
             <h3 className="eboard">
               <strong>{firstName} {lastName}</strong>
               {ROLES[role]}
@@ -54,7 +54,7 @@ const Staff = () =>  {
         ))}
       </ul>
 
-      <hr style={{margin: `${spacing.w4} 0`}}/>
+      <hr style={{ margin: `${spacing.w4} 0` }} />
 
       <h2>2022 Board Members</h2>
       <div className="boardmembers">
@@ -63,7 +63,7 @@ const Staff = () =>  {
 
       <hr style={{ margin: `${spacing.w4} 0` }} />
 
-      <Contact style={{ marginTop: spacing.w4}} />
+      <Contact style={{ marginTop: spacing.w4 }} />
     </div>
   )
 }

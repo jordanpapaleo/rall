@@ -100,7 +100,7 @@ export const colors = {
 export const fonts = {
   textBase: '1rem',
   textSm: '0.875rem',
-  textLg:'1.125rem',
+  textLg: '1.125rem',
   textXl: '1.25rem',
   text2xl: '1.5rem',
 }
