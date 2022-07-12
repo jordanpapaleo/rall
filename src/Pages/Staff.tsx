@@ -20,6 +20,11 @@ const Staff = () => {
   return (
     <div className="staff" style={{ marginLeft: '10%', marginRight: '10%' }}>
       <style>{`
+        .staff li {
+          list-style-type: none;
+          padding-left: 1rem;
+        }
+
         .staff li:hover {
           background-color: ${colorHash.grey200};
         }
@@ -28,8 +33,9 @@ const Staff = () => {
           color: ${colors.defaultText};
           display: grid;
           font-size: ${fonts.textLg};
-          grid-template-columns: 150px 150px 1fr;
+          grid-template-columns: 175px 175px 1fr;
           padding: ${spacing.w4} 0;
+          text-align: left;
         }
 
         .staff .boardmembers {
@@ -37,18 +43,29 @@ const Staff = () => {
           font-size: ${fonts.textBase};
           line-height: 1.5;
         }
+
+        .staff .role,
+        .staff .name {
+          text-align: left;
+        }
+
+        .staff .email {
+          text-align: right;
+        }
       `}</style>
       <h2>2022 Executive Board Members</h2>
       <ul style={{ listStyleType: 'none', margin: 0, padding: 0, }}>
         {eboard.map(({ firstName, lastName, role, email }) => (
           <li style={{ marginBottom: spacing.w2 }}>
             <h3 className="eboard">
-              <strong>{firstName} {lastName}</strong>
-              {ROLES[role]}
-              {email
-                ? <a href={`mailto:${email}`}>{email}</a>
-                : email
-              }
+              <strong className="name">{firstName} {lastName}</strong>
+              <div className="role">{ROLES[role]}</div>
+              <div className="email">
+                {email
+                  ? <a href={`mailto:${email}`}>{email}</a>
+                  : email
+                }
+              </div>
             </h3>
           </li>
         ))}

@@ -15,7 +15,11 @@ const BackgroundChecks = () => {
       <h1>Spring 2022 Background Checked Manager/Coach</h1>
       <h2>UPDATED: {dateString}</h2>
 
-      <div style={{ columns: '100px 4' }}>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(275px, 1fr))',
+      }}>
+        {/* <div style={{ columns: '100px 4' }}> */}
         {approvedVolunteers.map((volunteer) => (
           <div key={volunteer}>
             {volunteer}

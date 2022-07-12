@@ -1,5 +1,35 @@
+export const allstars2022 = [
+  {
+    season: 2022,
+    name: '9/11',
+    results: 'District 1 Champions',
+    teamImage: 'https://dt5602vnjxv0c.cloudfront.net/portals/28550/images/2022-rall-allstars.jpg',
+    teamImageCaption: 'Photo credit to Jeff at Insta Image',
+    headCoach: 'Jerred McAdara',
+    coaches: [
+      'Dominic Brunetti',
+      'Brian Park- Li',
+    ],
+    players: [
+      'Beckett Baxter',
+      'Gaetano Brunetti',
+      'Anthony Forde',
+      'Caeden LaGrone',
+      'Jackson Ligon',
+      'Rhys Loux',
+      'Owen Lucia',
+      'Beckett Lusk',
+      'Karsen McAdara',
+      'Scott Park-Li',
+      'Luca Roslaes-Sikora',
+      'Tayden Tuttle',
+    ],
+  }
+]
+
 export const allstars2021 = [
   {
+    season: 2021,
     name: 'Junior',
     teamImage: '',
     results: '',
@@ -27,6 +57,7 @@ export const allstars2021 = [
     ]
   },
   {
+    season: 2021,
     name: '11/12',
     results: '',
     teamImage: 'https://dt5602vnjxv0c.cloudfront.net/portals/28550/images/29d8e2d4-5f1f-488e-9a4a-7b28f9dfb68e.jpg',
@@ -51,8 +82,9 @@ export const allstars2021 = [
     ]
   },
   {
+    season: 2021,
     name: '9/10',
-    results: '1st place',
+    results: 'District 1 Champions',
     teamImage: '',
     headCoach: 'Jerred McAdara',
     coaches: [
@@ -79,6 +111,7 @@ export const allstars2021 = [
 ]
 
 export const hooligans2021 = {
+  season: 2021,
   name: 'Hooligans',
   results: '3rd place',
   teamImage: '',
@@ -106,6 +139,7 @@ export const hooligans2021 = {
 }
 
 export const rendegades2021 = {
+  season: 2021,
   name: 'Renegades',
   results: '3rd place',
   teamImage: '',

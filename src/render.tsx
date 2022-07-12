@@ -9,6 +9,8 @@ import Staff from './pages/Staff'
 import AllStars from './pages/AllStars'
 import Hooligans from './pages/Hooligans'
 import Results from './pages/Results'
+import Pictures from './pages/Pictures'
+import Sponsors from './pages/Sponsors'
 
 const pages = [
   BackgroundChecks,
@@ -18,6 +20,8 @@ const pages = [
   AllStars,
   Hooligans,
   Results,
+  Pictures,
+  Sponsors
 ]
 
 pages.forEach((page) => {
